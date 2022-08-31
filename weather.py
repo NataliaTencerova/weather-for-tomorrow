@@ -27,6 +27,10 @@ def write_html():
      copyHtmlFile.write(weatherTomorrow)
      copyHtmlFile.close
 
+     htmlFileServer = open ("/home/nitilki/Documents/github_repositories/http_server/weather.html", "w")
+     htmlFileServer.write(weatherTomorrow)
+     htmlFileServer.close
+     
 # while True:
 #      get_weather()
 
@@ -37,7 +41,7 @@ try:
 
      write_html()
 
-     webbrowser.open("file:///home/nitilki/Documents/github_repositories/weather_for_tomorrow/completeWeatherTomorrow.html")
+     # webbrowser.open("file:///home/nitilki/Documents/github_repositories/weather_for_tomorrow/completeWeatherTomorrow.html")
 
 except:
      print("Something went wrong.")
